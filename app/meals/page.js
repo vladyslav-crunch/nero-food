@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-function Meals(props) {
-   return (
-      <main>
-        <p>Meals</p>
-      </main>
-   );
+function Meals() {
+  return (
+    <main>
+      <p>Meals</p>
+    </main>
+  );
 }
 
 export default Meals;
