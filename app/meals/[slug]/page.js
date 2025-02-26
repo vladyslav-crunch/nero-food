@@ -4,8 +4,9 @@ import Image from "next/image";
 import { getMeal } from "@/lib/meals";
 import { notFound } from "next/navigation";
 
-function MealDetailsPage({ params }) {
-  const meal = getMeal(params.slug);
+async function MealDetailsPage({ params }) {
+  const { slug } = await params;
+  const meal = getMeal(slug);
   if (!meal) {
     notFound();
   }
