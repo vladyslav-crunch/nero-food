@@ -6,7 +6,7 @@
     left: 0;
     z-index: -1;
 
-    svg {
+    #main-header-background {
         display: block;
         width: 100%;
 
